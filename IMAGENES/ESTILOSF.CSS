@@ -1,0 +1,88 @@
+*{
+	margin:0;
+	padding:0;
+}
+.root{
+	scroll-behavior: smooth;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+	background: #6495ED;
+}
+.contenedor{
+	width:90%;
+	max-width:1200px;
+	overflow: hidden;
+	margin:auto;
+	padding:60px 0;
+}
+header{
+	height:100vh;
+	 background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%),url(..IMAGENES/lafray.png);
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 background-attachment:fixed;
+	 background-position: center;
+}
+.HEAD{
+	padding:0;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color:#fff;
+}
+.MENU{
+	position: fixed;
+	top: 30px;
+	right: 30px;
+	background: #fff;
+	width: 40px;
+	height:40px;
+	cursor: pointer;
+	border-radius:10px;
+	box-shadow: 0 0 6px rbga(0,0,0,.5);
+}
+.navegacion{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 30vw;
+	height: 100%;
+	background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
+	box-shadow: 0 0 6px rbga(0,0,0,.5);
+	transition: transform .3s ease-in-out;
+}
+
+header:hover .navegacion{
+	transform: translate(110%);
+}
+
+.spread{
+	transform: translate(0);
+}
+.navegacion a{
+	color:#fff;
+	text-decoration: none;
+}
+.TITULO{
+	font-size: 60px;
+	margin-bottom: 15px;
+}
+.copy{
+	font-weight: 300;
+	font-size: 25px;
+}
+/*NOSOTROS*/
+.SUBTITULO{
+	text-align:center;
+	font-weight: 300;
+	color:#9f8ad0;
+	margin-bottom: 40px
+	font-size:40px; 
+}
